@@ -3,6 +3,9 @@
     <name>In-progress movies</name>
     <match>all</match>
     <rule field="inprogress" operator="true" />
+    <rule field="path" operator="startswith">
+        <value>nfs://192.168.1.29/mnt/Main/DATAS/Movies/Films/</value>
+    </rule>
     <limit>15</limit>
     <order direction="descending">lastplayed</order>
 </smartplaylist>
